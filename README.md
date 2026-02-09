@@ -21,7 +21,7 @@ pip install -r requirements.txt
 
 ## 4) 最小実行例（コピペ可能）
 ```bash
-python dense_ibvs.py --target data/samples/target.png --observed data/samples/observed.png --mask data/samples/mask.png --out-dir outputs/demo --run-name dense_ibvs
+python dense_ibvs.py --target data/samples/target.png --observed data/samples/DS/{DStype}.png --mask data/samples/mask.png --out-dir outputs/demo --run-name dense_ibvs
 ```
 
 設定ファイル利用:
@@ -30,7 +30,7 @@ python dense_ibvs.py --config configs/default.yaml
 ```
 
 ## 5) データの置き場所（サンプル、取得方法）
-- 最小サンプル: `data/samples/target.png`, `data/samples/observed.png`, `data/samples/mask.png`
+- 最小サンプル: `data/samples/target.png`, `data/samples/DS/{DStype}.png`, `data/samples/mask.png`
 - 出力: `--out-dir` 配下
   - `<run_name>_H_overlay.png`
   - `<run_name>_side_by_side.png`
