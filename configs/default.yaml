@@ -1,0 +1,19 @@
+run:
+  target: data/samples/target.png
+  observed: data/samples/observed.png
+  mask: data/samples/mask.png
+  out_dir: outputs/demo
+  run_name: dense_ibvs
+  encoder: dino
+  model_name: facebook/dinov3-vitb16-pretrain-lvd1689m
+  vit_patch: 16
+  long_side: 1600
+  pad_to_multiple: true
+  feat_mode: last
+  feat_layer: -1
+  feat_last_k: 4
+  crop_mode: scale_then_center_crop
+  mask_min_cover: 0.0
+  max_iter: 50
+  lm_lambda: 0.0001
+  ls_backtrack: true
